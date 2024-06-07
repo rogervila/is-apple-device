@@ -1,0 +1,50 @@
+{
+  "name": "@lokalise/your-project-name",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "vite build",
+    "lint:eslint": "eslint --cache . --ext .js,.cjs,.ts",
+    "lint:ts": "tsc --noEmit",
+    "lint": "npm run lint:eslint && npm run lint:ts",
+    "lint:fix": "npm run lint:eslint -- --fix",
+    "test": "vitest run",
+    "prepare": "husky install",
+    "commit": "commit"
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/your-project-name.umd.cjs",
+  "module": "./dist/your-project-name.js",
+  "exports": {
+    ".": {
+      "import": "./dist/your-project-name.js",
+      "require": "./dist/your-project-name.umd.cjs"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "19.3.0",
+    "@commitlint/config-conventional": "19.2.2",
+    "@commitlint/prompt-cli": "19.3.1",
+    "@lokalise/eslint-config-frontend": "2.0.1",
+    "@semantic-release/changelog": "6.0.3",
+    "@semantic-release/commit-analyzer": "13.0.0",
+    "@semantic-release/git": "10.0.1",
+    "@semantic-release/github": "10.0.6",
+    "@semantic-release/npm": "12.0.1",
+    "@semantic-release/release-notes-generator": "14.0.0",
+    "eslint-config-prettier": "8.10.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "husky": "9.0.11",
+    "prettier": "2.8.8",
+    "semantic-release": "24.0.0",
+    "typescript": "5.1.6",
+    "vite": "4.5.2",
+    "vite-plugin-dts": "3.9.1",
+    "vitest": "0.34.6"
+  }
+}
