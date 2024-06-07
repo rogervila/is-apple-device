@@ -27,7 +27,7 @@
 - `git checkout -b my-branch-name`. Short, accurate and lowercase branch names are recommended.
 - Commit your changes. Check our [Commit Message Convention](#commit-message-convention).
 - Clean your commit history(if required). We recommend using [rebase interactive](#rebase-interactive).
-- PR is approved by at least one of the [Codeowners](https://github.com/lokalise/npm-package-template/blob/main/CODEOWNERS).
+- PR is approved by at least one of the [Codeowners](https://github.com/rogervila/is-apple-device/blob/main/CODEOWNERS).
 - Rebase with `main` and **Merge** your changes.
 
 ### Commit Message Convention
@@ -74,7 +74,7 @@ BREAKING CHANGE: "foo" export no longer available, use "bar".'
 
 #### Removing deprecated functionality
 
-If we followed suggestion from the [previous section](#how-to-approach-breaking-changes), we're likely to end up with a bunch of deprecated functionality that we don't want to maintain forever. Every once in a while we'll do a breaking change release where the only changes will be removal of deprecated features. 
+If we followed suggestion from the [previous section](#how-to-approach-breaking-changes), we're likely to end up with a bunch of deprecated functionality that we don't want to maintain forever. Every once in a while we'll do a breaking change release where the only changes will be removal of deprecated features.
 
 This should mean that, if consumers migrated deprecated features in timely manner, the breaking change should actually be painless.
 

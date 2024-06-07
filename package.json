@@ -1,5 +1,5 @@
 {
-  "name": "@lokalise/your-project-name",
+  "name": "is-apple-device",
   "version": "1.0.0",
   "scripts": {
     "build": "vite build",
@@ -15,12 +15,12 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/your-project-name.umd.cjs",
-  "module": "./dist/your-project-name.js",
+  "main": "./dist/is-apple-device.umd.cjs",
+  "module": "./dist/is-apple-device.js",
   "exports": {
     ".": {
-      "import": "./dist/your-project-name.js",
-      "require": "./dist/your-project-name.umd.cjs"
+      "import": "./dist/is-apple-device.js",
+      "require": "./dist/is-apple-device.umd.cjs"
     }
   },
   "publishConfig": {
