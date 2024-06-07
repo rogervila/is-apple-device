@@ -14,7 +14,7 @@ jobs:
           node-version: 20.x
           cache: "npm"
       - name: Install Dependencies
-        run: npm ci
+        run: npm install
       - name: Build Package
         run: npm run build
   pr-checks-code-lint:
@@ -29,7 +29,7 @@ jobs:
           node-version: 20.x
           cache: "npm"
       - name: Install Dependencies
-        run: npm ci
+        run: npm install
       - name: Run Code Linting
         run: npm run lint
   pr-checks-tests:
@@ -44,7 +44,7 @@ jobs:
           node-version: 20.x
           cache: "npm"
       - name: Install Dependencies
-        run: npm ci
+        run: npm install
       - name: Run Tests
         run: npm run test
 

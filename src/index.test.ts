@@ -1,62 +1,64 @@
 import isAppleDevice from "./index";
 
 describe("is-apple-device", () => {
-    const consoleMock = vi.spyOn(console, 'warn').mockImplementation(() => undefined);
+	const consoleMock = vi
+		.spyOn(console, "warn")
+		.mockImplementation(() => undefined);
 
-    afterAll(() => {
-        consoleMock.mockReset();
-    });
+	afterAll(() => {
+		consoleMock.mockReset();
+	});
 
-    it("is apple device based on navigator.platform", () => {
-        /** @ts-expect-error 2740 */
-        const nav: Navigator = {
-            platform: 'macintel',
-        }
+	it("is apple device based on navigator.platform", () => {
+		/** @ts-expect-error 2740 */
+		const nav: Navigator = {
+			platform: "macintel",
+		};
 
-        expect(isAppleDevice(nav)).toBe(true);
-    });
+		expect(isAppleDevice(nav)).toBe(true);
+	});
 
-    it("is not apple device based on navigator.platform", () => {
-        /** @ts-expect-error 2740 */
-        const nav: Navigator = {
-            platform: 'win32',
-        }
+	it("is not apple device based on navigator.platform", () => {
+		/** @ts-expect-error 2740 */
+		const nav: Navigator = {
+			platform: "win32",
+		};
 
-        expect(isAppleDevice(nav)).toBe(false);
-        expect(consoleMock).toHaveBeenCalledTimes(0);
-    });
+		expect(isAppleDevice(nav)).toBe(false);
+		expect(consoleMock).toHaveBeenCalledTimes(0);
+	});
 
-    it("is apple device based on navigator.userAgentData.platform", () => {
-        const nav: Navigator = {
-            /** @ts-expect-error 2561 */
-            userAgentData: {
-                platform: 'iPhone'
-            }
-        }
+	it("is apple device based on navigator.userAgentData.platform", () => {
+		const nav: Navigator = {
+			/** @ts-expect-error 2561 */
+			userAgentData: {
+				platform: "iPhone",
+			},
+		};
 
-        expect(isAppleDevice(nav)).toBe(true);
-        expect(consoleMock).toHaveBeenCalledTimes(0);
-    });
+		expect(isAppleDevice(nav)).toBe(true);
+		expect(consoleMock).toHaveBeenCalledTimes(0);
+	});
 
-    it("is not apple device based on navigator.userAgentData.platform", () => {
-        const nav: Navigator = {
-            /** @ts-expect-error 2561 */
-            userAgentData: {
-                platform: 'Windows'
-            }
-        }
+	it("is not apple device based on navigator.userAgentData.platform", () => {
+		const nav: Navigator = {
+			/** @ts-expect-error 2561 */
+			userAgentData: {
+				platform: "Windows",
+			},
+		};
 
-        expect(isAppleDevice(nav)).toBe(false);
-        expect(consoleMock).toHaveBeenCalledTimes(0);
-    });
+		expect(isAppleDevice(nav)).toBe(false);
+		expect(consoleMock).toHaveBeenCalledTimes(0);
+	});
 
-    it("it cannot find the platform", () => {
-        /** @ts-expect-error 2740 */
-        const nav: Navigator = {
-            //
-        }
+	it("cannot find the platform", () => {
+		/** @ts-expect-error 2740 */
+		const nav: Navigator = {
+			//
+		};
 
-        expect(isAppleDevice(nav)).toBe(false);
-        expect(consoleMock).toHaveBeenCalledOnce();
-    });
+		expect(isAppleDevice(nav)).toBe(false);
+		expect(consoleMock).toHaveBeenCalledOnce();
+	});
 });
