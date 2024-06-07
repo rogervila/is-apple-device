@@ -8,5 +8,17 @@
     "@lokalise/frontend/core",
     "@lokalise/frontend/jest",
     "@lokalise/frontend/typescript"
-  ]
+  ],
+  "rules": {
+    "import/no-default-export": "off",
+    "no-console": "off",
+    "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "max-len": [
+      "error",
+      {
+        "code": 120
+      }
+    ]
+  }
 }

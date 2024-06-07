@@ -11,10 +11,9 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 18.x
-          cache: "npm"
+          node-version: 20.x
       - name: Install Dependencies
-        run: npm ci
+        run: npm install
       - name: Build Package
         run: npm run build
   pr-checks-code-lint:
@@ -26,10 +25,9 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 18.x
-          cache: "npm"
+          node-version: 20.x
       - name: Install Dependencies
-        run: npm ci
+        run: npm install
       - name: Run Code Linting
         run: npm run lint
   pr-checks-tests:
@@ -41,10 +39,9 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 18.x
-          cache: "npm"
+          node-version: 20.x
       - name: Install Dependencies
-        run: npm ci
+        run: npm install
       - name: Run Tests
         run: npm run test
 
