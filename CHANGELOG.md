@@ -1,3 +1,9 @@
+## [1.1.0](https://github.com/rogervila/is-apple-device/compare/v1.0.0...v1.1.0) (2024-06-10)
+
+### Features
+
+* Update pr-checks.yml ([4413a7d](https://github.com/rogervila/is-apple-device/commit/4413a7d210d5d9a3c2358f8ab8fd1e9dfc3e17f4))
+
 ## 1.0.0 (2024-06-07)
 
 ### Features
