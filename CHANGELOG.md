@@ -1,3 +1,9 @@
+## [1.2.0](https://github.com/rogervila/is-apple-device/compare/v1.1.0...v1.2.0) (2024-06-13)
+
+### Features
+
+* Github links ([#7](https://github.com/rogervila/is-apple-device/issues/7)) ([798b384](https://github.com/rogervila/is-apple-device/commit/798b384063720233ff1276dfcd351c6e7f27fc52))
+
 ## [1.1.0](https://github.com/rogervila/is-apple-device/compare/v1.0.0...v1.1.0) (2024-06-10)
 
 ### Features
