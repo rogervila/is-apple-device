@@ -1,9 +1,7 @@
 <p align="center"><img width="200" src="https://png.pngtree.com/png-vector/20231017/ourmid/pngtree-fresh-apple-fruit-red-png-image_10203073.png" alt="is-apple-device" /></p>
 
-[![StyleCI](https://github.styleci.io/repos/811781668/shield?branch=main)](https://github.styleci.io/repos/234736708)
-<!--[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=rogervila_is-apple-device&metric=coverage)](https://sonarcloud.io/dashboard?id=rogervila_is-apple-device)-->
-<!--[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=rogervila_is-apple-device&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=rogervila_is-apple-device)-->
-
+[![StyleCI](https://github.styleci.io/repos/811781668/shield?branch=main)](https://github.styleci.io/repos/811781668)
+![GitHub Repo stars](https://img.shields.io/github/stars/rogervila/is-apple-device)
 [![NPM](https://nodei.co/npm/is-apple-device.png?compact=true)](https://nodei.co/npm/is-apple-device/)
 
 # Is Apple Device

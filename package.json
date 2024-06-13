@@ -1,6 +1,20 @@
 {
   "name": "is-apple-device",
+  "author": "Roger Vilà <rogervila@me.com> (https://rogervila.es)",
   "version": "1.1.0",
+  "bugs": {
+    "url": "https://github.com/rogervila/is-apple-device/issues"
+  },
+  "homepage": "https://github.com/rogervila/is-apple-device#readme",
+  "keywords": [
+    "apple",
+    "ipad",
+    "iphone",
+    "ipod",
+    "mac",
+    "osx",
+    "ios"
+  ],
   "scripts": {
     "build": "vite build",
     "lint:eslint": "eslint --cache . --ext .js,.cjs,.ts",
